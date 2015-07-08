@@ -1,1 +1,15 @@
 /* add your styles here */
+#portfolio .portfolio-item {
+	position: relative;
+}
+
+#portfolio .portfolio-item .primary {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#portfolio .portfolio-item .secondary {
+		opacity: 0;
+}
