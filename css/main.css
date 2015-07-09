@@ -13,3 +13,7 @@
 #portfolio .portfolio-item .secondary {
 		opacity: 0;
 }
+
+.primary:hover {
+	conten: .secondary;
+}
