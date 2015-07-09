@@ -15,5 +15,7 @@
 }
 
 .primary:hover {
-	conten: .secondary;
+	.secondary {
+		opacity: 100;
+	}
 }
