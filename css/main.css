@@ -1,21 +1,24 @@
-/* add your styles here */
-#portfolio .portfolio-item {
-	position: relative;
-}
 
-#portfolio .portfolio-item .primary {
+.primary, .secondary {
 	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
+	-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+-webkit-transition: -webkit-transform 0.3s;
+				transition: transform 0.3s;
 }
 
-#portfolio .portfolio-item .secondary {
-		opacity: 0;
+.primary {
+		top: 0;
+		left: 0;
+		z-index: 1;
 }
 
 .primary:hover {
-	.secondary {
-		opacity: 100;
-	}
+		-webkit-transform: rotateY(-180deg);
+		transform: rotateY(-180deg);
+}
+
+.secondary:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
